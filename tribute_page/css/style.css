@@ -13,30 +13,28 @@ main{
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	margin-top: 5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 5%;
 	font-family: 'Courgette', cursive;
 }
 #topo{
 	padding-top: 20px;
+	text-align: justify;
 }
 p{
 	font-size: 30px;
 }
 #img-div{
-	padding: 20px 20px 40px 20px;
+	padding: 20px 20px 30px 20px;
 	background: rgb(255, 255, 255);
-	margin-top: auto;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-bottom: 5%;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
 }
 #image{
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 100%;
+	height: auto;
 }
 #img-caption{
 	font-size: 10px;
+	text-align: justify;
 }
