@@ -14,6 +14,8 @@ main{
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	font-family: 'Courgette', cursive;
+	width: 100%;
+	height: auto;
 }
 #topo{
 	padding-top: 20px;
