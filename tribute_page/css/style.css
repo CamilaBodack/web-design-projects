@@ -18,11 +18,10 @@ main{
 	height: auto;
 }
 #topo{
-	padding-top: 20px;
-	text-align: justify;
 }
 p{
-	font-size: 30px;
+	font-size: 20px;
+	line-height: 24px
 }
 #img-div{
 	padding: 20px 20px 30px 20px;
@@ -38,5 +37,10 @@ p{
 }
 #img-caption{
 	font-size: 10px;
+}
+#tribute-info{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 	text-align: justify;
 }
