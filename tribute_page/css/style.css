@@ -24,15 +24,12 @@ p {
 	line-height: 24px;
 }
 #img-div {
-  display: inline-block;
 	padding: 20px 20px 30px 20px;
 	background: rgb(255, 255, 255);
 	margin-top: 50px;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 50px;
-  max-width: 100%;
-  height: auto;
 }
 img{
 	display: block;
