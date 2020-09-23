@@ -1,45 +1,50 @@
-body{
+body {
 	background-color: rgb(255, 255, 255);
-	display: inline-block;
+	display: block;
 	align-content: center;
 	align-items: center;
 	text-align: center;
+  max-width: 100%;
+  height: auto;
 }
-main{
+main {
 	background-color: rgb(231, 231, 231);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	font-family: 'Courgette', cursive;
+	font-family: "Courgette", cursive;
 	width: 100%;
 	height: auto;
 }
-#topo{
+#topo {
 }
-p{
+p {
 	font-size: 20px;
-	line-height: 24px
+	line-height: 24px;
 }
-#img-div{
+#img-div {
+  display: inline-block;
 	padding: 20px 20px 30px 20px;
 	background: rgb(255, 255, 255);
 	margin-top: 50px;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 50px;
-}
-#image{
-	width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 img{
 	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
-#img-caption{
+#img-caption {
 	font-size: 10px;
 }
-#tribute-info{
+#tribute-info {
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
