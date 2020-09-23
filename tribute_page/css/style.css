@@ -3,9 +3,7 @@ body{
 main{
 	background-color: rgb(208, 208, 209);
 	border-radius: 15px;
-	font-family: 'Allura', cursive;
-	font-family: 'Dancing Script', cursive;
-	font-family: 'Sacramento', cursive;
+	font-family: 'Courgette', cursive;
 }
 #title{
 	text-align: center;
