@@ -36,6 +36,7 @@ div{
 }
 #survey-form{
     background-color: rgb(46, 44, 47);
+    opacity: 0.85;
     align-self: center;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -58,7 +59,7 @@ div{
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
     font-weight: bold;
     color: rgb(192, 188, 195);
