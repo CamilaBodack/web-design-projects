@@ -1,0 +1,30 @@
+html, body{
+    background-image: url(../imgs/night_fly.jpg);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(67, 69, 70);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 5px solid rgb(177, 91, 212);
+    border-style: groove;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    font-size: 20px;
+    color: rgb(224, 189, 4);
+    align-content: center;
+    text-align: center;
+}
+#title{
+    text-align: inherit;
+}
+#description{
+    text-align: inherit;
+}
