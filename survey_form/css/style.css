@@ -18,7 +18,7 @@ header{
     margin-right: auto;
     width: 50%;
     height: auto;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(224, 189, 4);
     align-content: center;
     text-align: center;
@@ -30,14 +30,18 @@ header{
     text-align: inherit;
 }
 div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     max-width: 100%;
     height: auto;
     padding: 15px 15px 15px 15px;
 }
 #survey-form{
+    align-content: center;
+    box-sizing: border-box;
     background-color: rgb(46, 44, 47);
     opacity: 0.85;
-    align-self: center;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -45,21 +49,22 @@ div{
     border: 5px solid rgb(105, 107, 108);
     border-style: groove;
     width: 40%;
+    height: auto;
+    padding: 15px 15px 15px 15px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    height: auto;
     margin-top: 20px;
 
 }
 .form-group{
+    align-content: center;
     align-self: center;
     padding: 30px 15px 15px 15px;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    text-align: justify;
+    text-align: right;
     font-size: 25px;
     font-weight: bold;
     color: rgb(192, 188, 195);
