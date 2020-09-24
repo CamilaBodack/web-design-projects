@@ -6,4 +6,4 @@ freecodecamp web-design projects
 
 ## Tribute Page
 
-<img src="https://freeimage.host/i/27319f"><img src="https://iili.io/27319f.md.png"/>
+![tribute_page](tribute_page/tribute_page_agatha.png)
