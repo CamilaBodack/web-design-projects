@@ -6,4 +6,4 @@ freecodecamp web-design projects
 
 ## Tribute Page
 
-![tribute_page](tribute_page/tribute_page_agatha.png)
+![tribute_page](tribute_page/tribute_page_agatha.png | width=100)
