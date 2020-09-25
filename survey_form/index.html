@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-	<title id="title">Survey Form for Mages</title>
+	<title>Survey Form for Mages</title>
 </head>
 
 <body>
@@ -17,11 +17,11 @@
 		<div class="form-group">
 			<div>
 				<label id="name-label" for="name">Name</label>
-				<input type="text" id="name" name="full_name" placeholder="Your full name...">
+				<input type="text" id="name" required="true" name="full_name" placeholder="Your full name...">
 			</div>
 			<div>
 				<label id="email-label" for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="Your full email...">
+				<input type="email" id="email" required="true" name="email" placeholder="Your full email...">
 			</div>
 			<div>
 				<label id="number-label" for="age">Age</label>
@@ -43,12 +43,23 @@
 				<label for="waiting">Need to Wait(few days)</label>
 				<input type="radio" name="form-group" value="waiting">
 			</div>
-			<div>
-				<label for="comments">Additional comments</label>
+			<div class="notifications">
+				<p>Notifications</p>
+				<input type="checkbox" id="new-destination" name="new-destination" value="new-destination">
+				<label for="new-destination">When new destinations are available</label><br>
+				<input type="checkbox" id="new-adventurer" name="new-adventurer" value="new-adventurer">
+				<label for="new-adventurer">When new adventurers arrive</label><br>
+				<input type="checkbox" id="general-news" name="general-news" value="general-news">
+				<label for="general-news">News about destinations, equipaments and adventurers</label><br>
+			</div>
+			<div class="comments">
+				<label for="comments">Additional information</label>
 				<textarea name="comments" rows="8" cols="80">Insert extra information...</textarea>
+			</div>
+			<div class="submit-form">
+				<button id="submit" type="submit" value="Submit">Submit</button>
 			</div>
 		</div>
 	</form>
 </body>
-
 </html>
