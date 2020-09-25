@@ -38,8 +38,6 @@ div{
     padding: 15px 15px 15px 15px;
 }
 #survey-form{
-    align-content: center;
-    box-sizing: border-box;
     background-color: rgb(46, 44, 47);
     opacity: 0.85;
     border-top-right-radius: 15px;
@@ -57,15 +55,18 @@ div{
 
 }
 .form-group{
-    align-content: center;
+    box-sizing: border-box;
+    position: relative;
     align-self: center;
     padding: 30px 15px 15px 15px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    text-align: right;
     font-size: 25px;
     font-weight: bold;
     color: rgb(192, 188, 195);
+}
+.availability-group{
+    display: inline;
 }
