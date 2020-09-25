@@ -2,10 +2,13 @@ html, body{
     background-image: url(../imgs/night_fly.jpg);
     height: 100%;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    font-size: 15px;
 }
 header{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     margin-top: 15px;
     background-color: rgb(67, 69, 70);
     border-top-right-radius: 15px;
@@ -18,10 +21,9 @@ header{
     margin-right: auto;
     width: 50%;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(224, 189, 4);
-    align-content: center;
-    text-align: center;
+    text-align:  center;
 }
 #title{
     text-align: inherit;
@@ -38,6 +40,7 @@ div{
     padding: 15px 15px 15px 15px;
 }
 #survey-form{
+    box-sizing: border-box;
     background-color: rgb(46, 44, 47);
     opacity: 0.85;
     border-top-right-radius: 15px;
@@ -46,27 +49,89 @@ div{
     border-bottom-right-radius: 15px;
     border: 5px solid rgb(105, 107, 108);
     border-style: groove;
-    width: 40%;
+    width: 50%;
     height: auto;
     padding: 15px 15px 15px 15px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-
+    text-align: left;
 }
 .form-group{
     box-sizing: border-box;
     position: relative;
     align-self: center;
-    padding: 30px 15px 15px 15px;
+    padding: 20px 15px 15px 15px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    font-size: 25px;
     font-weight: bold;
     color: rgb(192, 188, 195);
+    border: 1px solid rgb(177, 91, 212);
+    border-radius: 4px;
 }
 .availability-group{
     display: inline;
+}
+
+@media(max-width:600px){
+    html, body, div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px 0px 0px 0px;
+        align-items: center;
+        align-content: center;
+    }
+    #survey-form{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-content: center;
+        padding: 0px 0px 0px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .form-group{
+        display:flex;
+        box-sizing: border-box;
+    }
+    .availability-group{
+        display: flex;
+        box-sizing: border-box;
+    }
+}
+
+@media(min-width:500px) and (max-width:1024px){
+    header{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #survey-from{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
