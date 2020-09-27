@@ -8,10 +8,10 @@ Freecodecamp web-design projects
 
 A tribute demo page to Agatha Christie
 
-<img src="tribute_page/tribute_page_agatha.png" width="250" height="250"/>
+<img src="tribute_page/imgs/tribute_page_agatha.png" width="400" height="400"/>
 
 ## Survey form
 
 A form focused on RPG players looking for live RPG play adventures.
 
-<img src="survey_form/survey_form_demo.gif" width="250" height="250"/>
+<img src="survey_form/imgs/survey_form_demo.gif" width="400" height="400"/>
