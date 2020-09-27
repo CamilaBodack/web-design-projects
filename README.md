@@ -14,4 +14,4 @@ A tribute demo page to Agatha Christie
 
 A form focused on RPG players looking for live RPG play adventures.
 
-<img src="survey_form/imgs/survey_form_demo.gif" width="400" height="400"/>
+<img src="survey_form/imgs/survey_form_demo.gif" width="500" height="500"/>
