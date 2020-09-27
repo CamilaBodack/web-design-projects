@@ -5,12 +5,12 @@ Freecodecamp Responsive Web Design Projects
 
 In all challenges we should build responsive web pages using mostly HTML,  plain CSS and Javascript. Additional technologies (for example jQuery, React, Angular or Vue) were not recommended for these projects.
 
-*in progress*
+***in progress***
 
 ## Tribute Page
 
 
- 1. **First challenge: Tribute Page**
+ **1. First challenge: Tribute Page**
 
 
  In this project, we should build a tribute page that should look like this: https://codepen.io/freeCodeCamp/full/zNqgVx.
@@ -21,7 +21,7 @@ In all challenges we should build responsive web pages using mostly HTML,  plain
 ## Survey form
 
 
-2. **Second Challenge: Survey Form**
+**2. Second Challenge: Survey Form**
 
 
 In this project, we should build a responsive survey form similar to this one: https://codepen.io/freeCodeCamp/full/VPaoNP.
