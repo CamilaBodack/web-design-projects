@@ -60,7 +60,6 @@ div{
 }
 .form-group{
     box-sizing: border-box;
-    position: relative;
     align-self: center;
     padding: 20px 15px 15px 15px;
     width: 100%;
