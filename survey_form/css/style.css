@@ -49,7 +49,7 @@ div{
     border-bottom-right-radius: 15px;
     border: 5px solid rgb(105, 107, 108);
     border-style: groove;
-    width: 50%;
+    width: 40%;
     height: auto;
     padding: 15px 15px 15px 15px;
     margin-left: auto;
@@ -93,17 +93,14 @@ div{
         background-size: cover;
     }
     header{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+        display: block;
         text-align: center;
         box-sizing: border-box;
-        font-size: 10px;
+        font-size: 8px;
         max-width: 100%;
-        margin-left: 5px;
-        margin-right: 5px;
         height: auto;
-        padding: 5px 5px 5px 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #survey-form{
         display: block;
@@ -140,22 +137,5 @@ div{
         text-align: left;
         width:100%;
         height: auto;
-    }
-}
-
-@media(min-width:500px) and (max-width:1024px){
-    header{
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #survey-from{
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
