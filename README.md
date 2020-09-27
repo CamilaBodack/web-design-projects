@@ -7,6 +7,8 @@ In all challenges we should build responsive web pages using mostly HTML,  plain
 
 ***in progress***
 
+---
+
 ## Tribute Page
 
 
@@ -17,6 +19,8 @@ In all challenges we should build responsive web pages using mostly HTML,  plain
  For this project I created a tribute page for Agatha Christie using HTML5, plain CSS3 and an express server.
 
 <img src="tribute_page/imgs/tribute_page_agatha.png" width="600" height="700"/>
+
+---
 
 ## Survey form
 
