@@ -8,7 +8,7 @@ Freecodecamp web-design projects
 
 A tribute demo page to Agatha Christie
 
-<img src="tribute_page/imgs/tribute_page_agatha.png" width="300" height="500"/>
+<img src="tribute_page/imgs/tribute_page_agatha.png" width="600" height="600"/>
 
 ## Survey form
 
