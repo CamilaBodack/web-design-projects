@@ -1,6 +1,7 @@
 html, body{
     background-image: url(../imgs/night_fly.jpg);
     height: 100%;
+    width: 100%;
     background-size: cover;
     display: block;
     font-size: 15px;
