@@ -1,38 +1,37 @@
-body{
-    display: flex;
-    flex-direction: column;
+html, body{
     font-family: 'Buda', cursive;
-    height: auto;
-    width: 100%;
 }
 #header{
+    top: 0px;
     display: flex;
-    flex-direction: row;
-    position: fixed;
     width: 100%;
+    box-sizing: border-box;
+    position: fixed;
     height: auto;
-    margin:0;
-}
-#header-img{
-    display: flex;
+    background-color: rgb(255, 255, 255);
 }
 #nav-bar{
-}
-ul, li{
     display: flex;
-    flex-direction: row-reverse;
+    padding: 5vw 5vw 5vw 5vw;
+}
+.form-group{
+    width: 100%;
+    height: auto;
+}
+header li{
+    display: inline-flex;
+    text-align: right;
+    padding: 5px;
     font-size: 20px;
     font-weight: bold;
 }
+header ul{
+    ali
+}
 
 a{
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: auto;
-    padding: 20px;
-    text-align: right;
     text-decoration: none;
     color: rgb(0, 0, 0);
-
 }
