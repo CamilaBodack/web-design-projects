@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Buda', cursive;
+    height: auto;
+    width: 100%;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+#header-img{
+    display: flex;
+}
+#nav-bar{
+}
+ul, li{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
