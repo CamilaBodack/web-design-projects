@@ -44,6 +44,6 @@ The aim of this challenge was to develop a responsive product landing page using
 Thus, i created a page for a store that works with products like pigments, tints and other products related to the field of arts and design.
 Developed using HTML5, CSS3 and Express.
 
-<img src="product_landing_page/imgs/landing.gif" width="800" height="500">
+<img src="product_landing_page/imgs/landing.gif" width="800" height="450">
 
 ---
