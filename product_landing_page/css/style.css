@@ -69,7 +69,9 @@ header a{
 }
 .products-info-container{
     display: block;
-    text-align: justify;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
     width: 50%;
     margin-top: 30px;
     margin-left: auto;
