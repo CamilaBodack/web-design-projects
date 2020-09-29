@@ -69,7 +69,9 @@ a{
 }
 .products-info-container{
     display: block;
-    width: 100%;
+    text-align: justify;
+    width: 50%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -79,4 +81,10 @@ a{
     width: 25px;
     height: 25px;
     padding: 15px;
+}
+#video{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
