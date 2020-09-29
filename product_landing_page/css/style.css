@@ -228,14 +228,14 @@ footer a{
     }
     footer ul{
         display:  inherit;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
     footer li{
         display: inherit;
         flex-direction: row;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
         color: rgb(255, 255, 255);
     }
     footer a{
