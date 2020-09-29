@@ -102,3 +102,13 @@ a{
     height: 250px;
     border: 2px solid rgb(0, 0, 0);
 }
+footer{
+    display:  inline-flex;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+}
+footer ul{
+    display: inline-flex;
+    align-self: flex-start;
+    text-align: right;
+}
