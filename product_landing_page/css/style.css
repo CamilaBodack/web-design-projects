@@ -88,3 +88,17 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+.gallery{
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    text-align:  center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin: 30px;
+    padding: 15px;
+    width: 220px;
+    height: 250px;
+    border: 2px solid rgb(0, 0, 0);
+}
