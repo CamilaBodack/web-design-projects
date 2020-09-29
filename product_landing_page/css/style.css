@@ -67,3 +67,16 @@ a{
     background-color: inherit;
     color: inherit;
 }
+.products-info-container{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+.material-icons{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
