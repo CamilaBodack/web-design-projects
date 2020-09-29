@@ -32,3 +32,18 @@ In this project, we should build a responsive survey form similar to this one: h
 I created a survey form using HTML5, CSS3, and express, focused on RPG players who are looking for live actions, new histories and new places to play.
 
 <img src="survey_form/imgs/survey_form_demo.gif" width="700" height="500"/>
+
+---
+
+## Product Landing Page
+
+**3. Third Challenge: Product Landing Page**
+
+
+The aim of this challenge was to develop a responsive product landing page using as example this landing page https://codepen.io/freeCodeCamp/full/RKRbwL.
+Thus, i created a page for a store that works with products like pigments, tints and other products related to the field of arts and design.
+Developed using HTML5, CSS3 and Express.
+
+<img src="product_landing_page/imgs/landing.gif" width="642" height="316">
+
+---
