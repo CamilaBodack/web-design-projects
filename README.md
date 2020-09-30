@@ -31,7 +31,7 @@ In all challenges we should build responsive web pages using mostly HTML,  plain
 In this project, we should build a responsive survey form similar to this one: https://codepen.io/freeCodeCamp/full/VPaoNP.
 I created a survey form using HTML5, CSS3, and express, focused on RPG players who are looking for live actions, new histories and new places to play.
 
-<img src="survey_form/imgs/survey_form_demo.gif" width="700" height="500"/>
+<img src="survey_form/imgs/survey_form_demo.gif" width="640" height="316"/>
 
 ---
 
