@@ -14,7 +14,10 @@
 		<header>
 			Structure and Interpretation of Computer Programming
 		</header>
-		<nav class="nav-bar">
+		<nav id="nav-bar">
+			<header>
+				Pieces of the book Structure and Interpretation of Computer Programming
+			</header>
 			<ul class="content-list">
 				<li><a class="nav-link" href="#introduction">Introduction</a></li>
 				<li><a class="nav-link" href="#building_abstractions_with_procedures">Building Abstrations With Procedures</a></li>
@@ -22,6 +25,7 @@
 				<li><a class="nav-link" href="#modularity_objects_and_state">Modularity, Objects, and State</a></li>
 				<li><a class="nav-link" href="#metalinguistic_abstration">Metalinguistic Abstration</a></li>
 				<li><a class="nav-link" href="#computing_with_register_machines">Computing with Register Machines</a></li>
+				<li><a class="nav-link" href="#exercises">Exercises</a></li>
 			</ul>
 		</nav>
 		<section id="introduction" class="main-section">
@@ -31,7 +35,7 @@
 			<article>
 				<p> This book is dedicated, in respect and admiration, to the spirit that lives in the computer.
 					<br>
-					``I think that it's extraordinarily important that we in computer science keep fun in computing. When it started out, it was an awful lot of fun. Of course, the paying customers got shafted every now and then, and after a while we
+					''I think that it's extraordinarily important that we in computer science keep fun in computing. When it started out, it was an awful lot of fun. Of course, the paying customers got shafted every now and then, and after a while we
 					began to take their complaints seriously. We began to feel as if we really were responsible for the successful, error-free perfect use of these machines. I don't think we are. I think we're responsible for stretching them, setting
 					them off in new directions, and keeping fun in the house. I hope the field of computer science never loses its sense of fun. Above all, I hope we don't become missionaries. Don't feel as if you're Bible salesmen. The world has too
 					many of those already. What you know about computing other people will learn. Don't feel as if the key to successful computing is only in your hands. What's in your hands, I think and hope, is intelligence: the ability to see the
@@ -52,7 +56,6 @@
 				<p>A computational process is indeed much like a sorcerer's idea of a spirit. It cannot be seen or touched. It is not composed of matter at all. However, it is very real. It can perform intellectual work. It can answer questions. It
 					can affect the world by disbursing money at a bank or by controlling a robot arm in a factory. The programs we use to conjure processes are like a sorcerer's spells. They are carefully composed from symbolic expressions in arcane
 					and esoteric programming languages that prescribe the tasks we want our processes to perform.</p>
-
 			</article>
 		</section>
 		<section id="building_abstrations_with_data" class="main-section">
@@ -60,14 +63,143 @@
 				Building Abstrations with Data
 			</header>
 			<article>
-
+				<p>In this chapter we are going to look at more complex data. All the procedures in chapter 1 operate on simple numerical data, and simple data are not sufficient for many of the problems we wish to address using computation. Programs
+					are typically designed to model complex phenomena, and more often than not one must construct computational objects that have several parts in order to model real-world phenomena that have several aspects. Thus, whereas our focus
+					in chapter 1 was on building abstractions by combining procedures to form compound procedures, we turn in this chapter to another key aspect of any programming language: the means it provides for building abstractions by combining
+					data objects to form compound data.</p>
+				<p>...</p>
+				<p>In terms of data abstraction, we can regard a queue as defined by the following set of operations: </p>
+				<ul>
+					<li>a constructor:
+						<code>(make-queue)</code>
+						returns an empty queue (a queue containing no items).
+					</li>
+					<li>two selectors:
+						<code>(empty-queue?</code>queue)
+						tests if the queue is empty.
+						<code>(front-queue queue)</code>
+						returns the object at the front of the queue, signaling an error if the queue is empty; it does not modify the queue.
+					</li>
+					<li>two mutators:
+						<code>(insert-queue! queue item)</code>
+						inserts the item at the rear of the queue and returns the modified queue as its value.
+						<code>(delete-queue! queue)</code>
+						removes the item at the front of the queue and returns the modified queue as its value, signaling an error if the queue is empty before the deletion.
+					</li>
+				</ul>
 			</article>
 		</section id="modularity_objects_and_state" class="main-section">
+		<header>
+			Modularity, Objects, and State
+		</header>
+		<article>
+			<p>The preceding chapters introduced the basic elements from which programs are made. We saw how primitive procedures and primitive data are combined to construct compound entities, and we learned that abstraction is vital in helping us
+				to cope with the complexity of large systems. But these tools are not sufficient for designing programs. Effective program synthesis also requires organizational principles that can guide us in formulating the overall design of a
+				program. In particular, we need strategies to help us structure large systems so that they will be modular, that is, so that they can be divided ``naturally'' into coherent parts that can be separately developed and maintained.</p>
+		</article>
 		<section id="metalinguistic_abstration" class="main-section">
+			<header>
+				Metalinguistic Abstration
+			</header>
+			<article>
+				<p>In our study of program design, we have seen that expert programmers control the complexity of their designs with the same general techniques used by designers of all complex systems. They combine primitive elements to form
+					compound objects, they abstract compound objects to form higher-level building blocks, and they preserve modularity by adopting appropriate large-scale views of system structure. In illustrating these techniques, we have used Lisp
+					as a language for describing processes and for constructing computational data objects and processes to model complex phenomena in the real world. However, as we confront increasingly complex problems, we will find that Lisp, or
+					indeed any fixed programming language, is not sufficient for our needs. We must constantly turn to new languages in order to express our ideas more effectively. Establishing new languages is a powerful strategy for controlling
+					complexity in engineering design; we can often enhance our ability to deal with a complex problem by adopting a new language that enables us to describe (and hence to think about) the problem in a different way, using primitives,
+					means of combination, and means of abstraction that are particularly well suited to the problem at hand.</p>
+				<p>
+					Programming is endowed with a multitude of languages. There are physical languages, such as the machine languages for particular computers. These languages are concerned with the representation of data and control in terms of
+					individual bits of storage and primitive machine instructions. The machine-language programmer is concerned with using the given hardware to erect systems and utilities for the efficient implementation of resource-limited
+					computations. High-level languages, erected on a machine-language substrate, hide concerns about the representation of data as collections of bits and the representation of programs as sequences of primitive instructions. These
+					languages have means of combination and abstraction, such as procedure definition, that are appropriate to the larger-scale organization of systems.
+				</p>
+			</article>
 		</section>
 		<section id="computing_with_register_machines" class="main-section">
+			<header>
+				Computing With Register Machines
+			</header>
+			<article>
+				<p>In this chapter we will describe processes in terms of the step-by-step operation of a traditional computer. Such a computer, or register machine, sequentially executes instructions that manipulate the contents of a fixed set of
+					storage elements called registers. A typical register-machine instruction applies a primitive operation to the contents of some registers and assigns the result to another register. Our descriptions of processes executed by
+					register machines will look very much like ``machine-language'' programs for traditional computers. However, instead of focusing on the machine language of any particular computer, we will examine several Lisp procedures and
+					design a specific register machine to execute each procedure. Thus, we will approach our task from the perspective of a hardware architect rather than that of a machine-language computer programmer. In designing register machines,
+					we will develop mechanisms for implementing important programming constructs such as recursion. We will also present a language for describing designs for register machines. In section 5.2 we will implement a Lisp program that
+					uses these descriptions to simulate the machines we design.</p>
+			</article>
 		</section>
-
+		<section id="exercises" class="main-section">
+			<header>
+				Exercises
+			</header>
+			<article>
+				<p><strong>Exercise 1.1.</strong> Below is a sequence of expressions. What is the result printed by the interpreter in response to each expression? Assume that the sequence is to be evaluated in the order in which it is presented.</p>
+				<code>10
+					(+ 5 3 4)
+					(- 9 1)
+					(/ 6 2)
+					(+ (* 2 4) (- 4 6))
+					(define a 3)
+					(define b (+ a 1))
+					(+ a b (* a b))
+					(= a b)
+					(if (and (> b a) (< b (* a b))) b a) (cond ((=a 4) 6) ((=b 4) (+ 6 7 a)) (else 25)) (+ 2 (if (> b a) b a))
+						(* (cond ((> a b) a)
+						((< a b) b) (else -1)) (+ a 1))</code>
+							<p><strong>Exercise 1.2.</strong> Translate the following expression into prefix form </p>
+							<code>5 + 4 + (2 − (3 − (6 + 5 4 )))
+								3(6 − 2)(2 − 7)</code>
+							<p><strong>Exercise 1.3.</strong> Define a procedure that takes three numbers as arguments and returns the sum of the squares of the two larger numbers. </p>
+							<p><strong>Exercise 1.4.</strong> Observe that our model of evaluation allows for combinations whose operators are compound expressions. Use this observation to describe the behavior of the following procedure:</p>
+							<code>(define (a-plus-abs-b a b)
+								((if (> b 0) + -) a b))</code>
+							<p><strong>Exercise 1.5.</strong> Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order evaluation or normal-order evaluation. He defines the following two
+								procedures: </p>
+							<code>(define (p) (p))
+								(define (test x y)
+								(if (= x 0)
+								0
+								y))</code>
+							<p>Then he evaluates the expression</p>
+							<code>(test 0 (p))</code>
+							<p>What behavior will Ben observe with an interpreter that uses applicative-order evaluation? What behavior will he observe with an interpreter that uses normal-order evaluation? Explain your answer. (Assume that the
+								evaluation rule for the special form if is the same whether the interpreter is using normal or applicative order: The predicate expression is evaluated first, and the result determines whether to evaluate the
+								consequent or the alternative expression.)</p>
+							<p>...</p>
+							<p><strong>Exercise 3.56.</strong> A famous problem, first raised by R. Hamming, is to enumerate, in ascending order with no repetitions, all positive integers with no prime factors other than 2, 3, or 5. One obvious way
+								to do this is to simply test each integer in turn to see whether it has any factors other than 2, 3, and 5. But this is very inefficient, since, as the integers get larger, fewer and fewer of them fit the requirement.
+								As an alternative, let us call the required stream of numbers S and notice the following facts about it. </p>
+							<ul>
+								<li>S begins with 1.</li>
+								<li>The elements of <code>(scale-stream S 2)</code> are also elements of S.</li>
+								<li>The same is true for <code>(scale-stream S 3) and (scale-stream 5 S)</code>.</li>
+								<li>These are all the elements of S.</li>
+							</ul>
+							<p>Now all we have to do is combine elements from these sources. For this we define a procedure merge that combines two ordered streams into one ordered result stream, eliminating repetitions:</p>
+							<code>(define (merge s1 s2)
+								(cond ((stream-null? s1) s2)
+								((stream-null? s2) s1)
+								(else
+								(let ((s1car (stream-car s1))
+								(s2car (stream-car s2)))
+								(cond ((< s1car s2car) (cons-stream s1car (merge (stream-cdr s1) s2))) ((> s1car s2car)
+									(cons-stream s2car (merge s1 (stream-cdr s2))))
+									(else
+									(cons-stream s1car
+									(merge (stream-cdr s1)
+									(stream-cdr s2)))))))))</code>
+							<p>Then the required stream may be constructed with merge, as follows:</p>
+							<code>(define S (cons-stream 1 (merge
+								<??>
+								<??>)))
+							</code>
+							<p>Fill in the missing expressions in the places marked
+								<??> above.
+							</p>
+			</article>
+		</section>
+		<footer><a href="https://mitpress.mit.edu/sites/default/files/sicp/index.html" target="_blank">References</a></footer>
 	</main>
 
 </body>
