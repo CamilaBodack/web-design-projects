@@ -1,10 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Technical Documentation</title>
-	</head>
-	<body>
 
-	</body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="imgs/sicp_favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<title>SICPieces</title>
+</head>
+
+<body>
+	<main id="main-doc">
+		<nav id="nav-bar">
+			<header>
+				Pieces of the book Structure and Interpretation of Computer Programming
+			</header>
+			<ul class="content-list">
+				<li><a class="nav-link" href="#introduction">Introduction</a></li>
+				<li><a class="nav-link" href="#building_abstractions_with_procedures">Building Abstrations With Procedures</a></li>
+				<li><a class="nav-link" href="#building_abstrations_with_data">Building Abstrations with Data</a></li>
+				<li><a class="nav-link" href="#modularity_objects_and_state">Modularity, Objects, and State</a></li>
+				<li><a class="nav-link" href="#metalinguistic_abstration">Metalinguistic Abstration</a></li>
+				<li><a class="nav-link" href="#computing_with_register_machines">Computing with Register Machines</a></li>
+				<li><a class="nav-link" href="#exercises">Exercises</a></li>
+			</ul>
+		</nav>
+		<div class="content-container">
+			<section id="introduction" class="main-section">
+				<header>
+					Introduction
+				</header>
+				<article>
+					<p> This book is dedicated, in respect and admiration, to the spirit that lives in the computer.
+						<br>
+						''I think that it's extraordinarily important that wein computer science keep fun in computing. When itstarted out, it was an awful lot of fun. Of course,the paying customers got shafted every now and then,and after a
+						while we began to take their complaints seriously. We began tofeel as if we really were responsible for thesuccessful, error-free perfect use of these machines.I don't think we are. I think we're responsible forstretching
+						them, setting them off in new directions, and keeping fun in thehouse. I hope the field of computer science neverloses its sense of fun. Above all, I hope we don'tbecome missionaries. Don't feel as if you're Biblesalesmen. The
+						world has too many of those already. What you know about computingother people will learn. Don't feel as if the key tosuccessful computing is only in your hands. What's inyour hands, I think and hope, is intelligence:
+						the ability to see the machine as more than when you were first led up to it,that you can make it more.''
+						<br>
+						Alan J. Perlis (April 1, 1922-February 7, 1990)
+					</p>
+				</article>
+			</section>
+			<section id="building_abstractions_with_procedures" class="main-section">
+				<header>
+					Building Abstrations With Procedures
+				</header>
+				<article>
+					<p>We are about to study the idea of a computational process. Computational processes are abstract beings that inhabit computers. As they evolve, processes manipulate other abstract things called data. The evolution of a process
+						is directed by a pattern of rules called a program. People create programs to direct processes. In effect, we conjure the spirits of the computer with our spells.</p>
+					<p>A computational process is indeed much like a sorcerer's idea of a spirit. It cannot be seen or touched. It is not composed of matter at all. However, it is very real. It can perform intellectual work. It can answer
+						questions.It can affect the world by disbursing money at a bank or by controlling a robot arm in a factory. The programs we use to conjure processes are like a sorcerer's spells. They are carefully composed from symbolic
+						expressions in arcane and esoteric programming languages that prescribe the tasks we want our processes to perform.</p>
+				</article>
+			</section>
+			<section id="building_abstrations_with_data" class="main-section">
+				<header>
+					Building Abstrations with Data
+				</header>
+				<article>
+					<p>In this chapter we are going to look at more complex data. All the procedures in chapter 1 operate on simple numerical data, and simple data are not sufficient for many of the problems we wish to address using computation.
+						Programs are typically designed to model complexphenomena, and more often than not one must constructcomputational objects that have several parts in orderto model real-world phenomena that have severalaspects. Thus,
+						whereas our focus in chapter 1 was on buildingabstractions by combining procedures to form compoundprocedures, we turn in this chapter to another keyaspect of any programming language: the means itprovides for building
+						abstractions by combining data objects to formcompound data.</p>
+					<p>...</p>
+					<p>In terms of data abstraction, we can regard a queue as defined by the following set of operations: </p>
+					<ul>
+						<li>a constructor:
+							<code>(make-queue)</code>
+							returns an empty queue (a queue containing no items).
+						</li>
+						<li>two selectors:
+							<code>(empty-queue?</code>queue)
+							tests if the queue is empty.
+							<code>(front-queue queue)</code>
+							returns the object at the front of the queue, signaling an error if the queue is empty; it does not modify the queue.
+						</li>
+						<li>two mutators:
+							<code>(insert-queue! queue item)</code>
+							inserts the item at the rear of the queue and returns the modified queue as its value.
+							<code>(delete-queue! queue)</code>
+							removes the item at the front of the queue and returns the modified queue as its value, signaling an error if the queue is empty before the deletion.
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section id="modularity_objects_and_state" class="main-section">
+				<header>
+					Modularity, Objects, and State
+				</header>
+				<article>
+					<p>The preceding chapters introduced the basic elements from which programs are made. We saw how primitive procedures and primitive data are combined to construct compound entities, and we learned that abstraction is vital in
+						helping us to cope with the complexity of large systems. But these tools are not sufficient for designing programs. Effective program synthesis also requires organizational principles that can guide us in formulating the
+						overall design of a program. In particular, we need strategies to help us structure large systems so that they will be modular, that is, so that they can be divided "naturally" into coherent parts that can be separately
+						developed and maintained.</p>
+				</article>
+			</section>
+			<section id="metalinguistic_abstration" class="main-section">
+				<header>
+					Metalinguistic Abstration
+				</header>
+				<article>
+					<p>In our study of program design, we have seen that expert programmers control the complexity of their designs with the same general techniques used by designers of all complex systems. They combine primitive elements to form
+						compound objects, they abstract compound objects to form higher-level building blocks, and they preserve modularity by adopting appropriate large-scale views of system structure. In illustrating these techniques, we have used
+						Lisp as a language for describing processes and for constructing computational data objects and processes to model complex phenomena in the real world. However, as we confront increasingly complex problems, we will find that
+						Lisp, or indeed any fixed programming language, is not sufficient for our needs. We must constantly turn to new languages in order to express our ideas more effectively. Establishing new languages is a powerful strategy for
+						controlling complexity in engineering design; we can often enhance our ability to deal with a complex problem by adopting a new language that enables us to describe (and hence to think about) the problem in a different way,
+						using
+						primitives, means of combination, and means of abstraction that are particularly well suited to the problem at hand.</p>
+					<p> Programming is endowed with a multitude of languages. There are physical languages, such as the machine languages for particular computers. These languages are concerned with the representation of data and control in terms of
+						individual bits of storage and primitive machine instructions. The machine-language programmer is concerned with using the given hardware to erect systems and utilities for the efficient implementation of resource-limited
+						computations. High-level languages, erected on a machine-language substrate, hide concerns about the representation of data as collections of bits and the representation of programs as sequences of primitive instructions.These
+						languages have means of combination and abstraction, such as procedure definition, that are appropriate to the larger-scale organization of systems.</p>
+				</article>
+			</section>
+			<section id="computing_with_register_machines" class="main-section">
+				<header>
+					Computing With Register Machines
+				</header>
+				<article>
+					<p>In this chapter we will describe processes in termsof the step-by-step operation of a traditionalcomputer. Such a computer, or register machine,sequentially executes instructions that manipulate thecontents of a fixed
+						set of storage elements called registers. Atypicalregister-machine instruction applies aprimitiveoperation to the contents of someregisters and assignsthe result to anotherregister. Our descriptions ofprocesses
+						executed by register machines will look very muchlike "machine-language" programs fortraditionalcomputers. However, instead of focusing onthemachine language of any particular computer, wewillexamine several Lisp procedures
+						and design a specific register machine to executeeachprocedure. Thus, we will approach our task fromtheperspective of a hardware architect ratherthan that ofa machine-language computerprogrammer. In designingregister machines,
+						we will develop mechanisms forimplementingimportant programming constructs suchas recursion. Wewill also present a language fordescribing designs forregister machines. Insection 5.2 we will implement a Lisp program that uses
+						these descriptions to simulate the machineswedesign.</p>
+				</article>
+			</section>
+			<section id="exercises" class="main-section">
+				<header>
+					Exercises
+				</header>
+				<article>
+					<p><strong>Exercise 1.1.</strong> Below is a sequenceof expressions. What is the result printed by theinterpreter in response to each expression? Assumethat the sequence is to be evaluated in the order inwhich it is presented.</p>
+					<code>10(+ 5 3 4)(- 9 1) (/ 6 2)(+ (* 2 4) (- 4 6))(define a 3)(define b (+ a 1))(+ a b (* a b))(= a b)(if (and (> b a) (< b (* a b))) b a) (cond ((=a 4) 6) ((=b 4) (+ 6 7 a)) (else 25)) (+ 2 (if (> b a) b a))(* (cond ((> a b)
+							a)((< a b) b) (else -1)) (+ a 1))</code>
+								<p><strong>Exercise 1.2.</strong> Translate thfollowing expression into prefix form </p>
+								<code>5 + 4 + (2 − (3 − (6 + 5 4 )))
+									3(6 − 2)(2 − 7)</code>
+								<p><strong>Exercise 1.3.</strong> Define procedure that takes three numbers as argumentand returns the sum of the squares of the twlarger numbers. </p>
+								<p><strong>Exercise 1.4.</strong> Observe that oumodel of evaluation allows for combinations whosoperators are compound expressions. Use thiobservation to describe the behavior of thfollowing procedure:</p>
+								<code>(define (a-plus-abs-b a b)((if (> b 0) + -a b))</code>
+								<p><strong>Exercise 1.5.</strong> Ben Bitdiddlhas invented a test to determine whether thinterpreter he is faced with is using applicativorder evaluation or normal-order evaluation. Hdefines the following two
+									procedures: </p>
+								<code>(define (p) (p))(define (test x y)(if (= x 0)
+									0y))</code>
+								<p>Then he evaluates the expression</p>
+								<code>(test 0 (p))</code>
+								<p>What behavior will Ben observe with ainterpreter that uses applicative-ordeevaluation? What behavior will he observe with ainterpreter that uses normal-order evaluationExplain your answer. (Assume that the
+									evaluatiorule for the special form if is the same whethethe interpreter is using normal or applicativorder: The predicate expression is evaluatefirst, and the result determines whether tevaluate the consequent or
+									the alternativexpression.)</p>
+								<p>...</p>
+								<p><strong>Exercise 3.56.</strong> A famouproblem, first raised by R. Hamming, is tenumerate, in ascending order with no repetitionsall positive integers with no prime factors othethan 2, 3, or 5. One obvious way to do
+									this ito simply test each integer in turn to see whetheit has any factors other than 2, 3, and 5. Buthis is very inefficient, since, as the integerget larger, fewer and fewer of them fit threquirement. As an
+									alternative, let us call threquired stream of numbers S and notice thfollowing facts about it.</p>
+								<ul>
+									<li>S begins with 1.</li>
+									<li>The elements of <code>(scale-stream S 2)code> are also elements of S.</li>
+									<li>The same is true for <code>(scale-stream S 3and (scale-stream 5 S)</code>.</li>
+									<li>These are all the elements of S.</li>
+								</ul>
+								<p>Now all we have to do is combine elements fromthese sources. For this we define a proceduremerge that combines two ordered streams into oneordered result stream, eliminating repetitions:</p>
+								<code>(define (merge s1 s2)(cond ((stream-null?s1) s2)((stream-null? s2) s1)(else(let ((s1car(stream-car s1))(s2car (stream-car s2)))(cond ((<s1car s2car) (cons-stream s1car (merge (stream-cdrs1) s2))) ((> s1car
+										s2car)(cons-stream s2car(merge s1 (stream-cdr s2))))(else(cons-stream s1car
+										(merge (stream-cdr s1)(stream-cdr s2)))))))))<code>
+											<p>Then the required stream may bconstructed withmerge, as follows:</p>
+											<code>(define S (cons-stream 1 (merge
+												<??>
+												<??>)))
+											</code>
+											<p>Fill in the missing expressions in thplacesmarked
+												<??> above.
+											</p>
+				</article>
+			</section>
+		</div>
+		<footer><a href="https://mitpress.mit.edu/sites/default/files/sicp/index.html" target="_blank">References</a></footer>
+	</main>
+
+</body>
+
 </html>

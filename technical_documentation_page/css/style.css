@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 238, 249);
+}
+#main-doc{
+    display: inherit;
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+#nav-bar{
+    display: block;
+    width: 150em;
+    max-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    overflow: scroll;
+    border: 2px solid rgb(105, 105, 105);
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+.main-section{
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    height: 100%;
+}
