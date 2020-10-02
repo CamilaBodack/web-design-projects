@@ -12,18 +12,41 @@ html, body{
 }
 #nav-bar{
     display: block;
-    width: 150em;
+    width: 180em;
     max-height: 100%;
     margin-top: 1em;
     margin-bottom: 0;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     overflow: scroll;
-    border-right: 3px solid rgb(105, 105, 105);
+    border-right: 3px solid rgb(101, 101, 101);
 }
 #nav-bar header{
     display: inherit;
     text-align: center;
-    font-size: 15px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight:  bolder;
+    color: rgb(33, 34, 34);
+}
+#nav-bar ul{
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+#nav-bar li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 2;
+    border-top: 1px solid rgb(33, 34, 34);
+    border-bottom: 1px solid rgb(33, 34, 34);
+}
+#nav-bar a{
+    text-decoration: none;
+    color: rgb(101, 101, 101);
 }
 .content-container{
     display: flex;
