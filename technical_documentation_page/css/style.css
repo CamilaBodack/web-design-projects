@@ -1,62 +1,82 @@
 html, body{
     margin: 0;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
     background-color: rgb(208, 238, 249);
 }
 #main-doc{
     display: inherit;
-    margin: auto;
+    position: static;
+    box-sizing: border-box;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 #nav-bar{
     display: block;
-    width: 180em;
-    max-height: 100%;
-    margin-top: 1em;
-    margin-bottom: 0;
+    position: static;
+    width: 20%;
+    padding: 5px;
+    height: auto;
     margin-left: 0;
-    margin-right: 0;
-    overflow: scroll;
+    margin-right: auto;
     border-right: 3px solid rgb(101, 101, 101);
+    overflow: scroll;
 }
 #nav-bar header{
     display: inherit;
     text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    font-weight:  bolder;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 2em;
+    border-bottom: 1px solid rgb(33, 34, 34);
+    font-weight: bold;
     color: rgb(33, 34, 34);
 }
 #nav-bar ul{
     margin-top: 1em;
     margin-left: 0;
-    margin-right: 0;
+    width: auto;
+    height: auto;
 }
 #nav-bar li{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    list-style: none;
+    padding: 0;
     margin-left: 0;
-    margin-right: 0;
-    line-height: 2;
-    border-top: 1px solid rgb(33, 34, 34);
+    margin-right: 10px;
+    line-height: 2.5;
     border-bottom: 1px solid rgb(33, 34, 34);
 }
 #nav-bar a{
+    text-align: justify;
     text-decoration: none;
     color: rgb(101, 101, 101);
 }
 .content-container{
+    box-sizing: content-box;
+    position: static;
+    height: auto;
+    width: 70%;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
+    margin-right: 0;
+    overflow-y: scroll;
 }
 .main-section{
-    width: 90%;
+    width: 100%;
     margin-right: 0;
     margin-left: auto;
     margin-top: 0;
-    max-height: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+footer a{
+    display: inline-block;
 }
