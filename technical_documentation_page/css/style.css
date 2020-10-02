@@ -12,20 +12,20 @@ html, body{
 }
 #nav-bar{
     display: block;
-    width: 10%;
-    height: 100%;
-    margin-left: 0;
+    width: 150em;
+    max-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: auto;
+    overflow: scroll;
+    border: 2px solid rgb(105, 105, 105);
 }
 .content-container{
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
 }
 .main-section{
-    width: 70%;
+    width: 90%;
     margin-right: 0;
     margin-left: auto;
     margin-top: 0;
