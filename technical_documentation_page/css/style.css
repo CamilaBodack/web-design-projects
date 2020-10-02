@@ -7,8 +7,6 @@ html, body{
 }
 #main-doc{
     display: inherit;
-    position: static;
-    box-sizing: border-box;
     height: auto;
     width: auto;
 }
@@ -54,7 +52,6 @@ html, body{
 }
 .content-container{
     box-sizing: content-box;
-    position: static;
     height: auto;
     width: 70%;
     display: flex;
@@ -71,11 +68,7 @@ html, body{
     height: auto;
 }
 footer{
-    display: flex;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    margin: 0;
+    display:inline-block;
 }
 footer a{
     display: inline-block;

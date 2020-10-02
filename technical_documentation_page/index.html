@@ -157,22 +157,22 @@
 									alternative, let us call threquired stream of numbers S and notice thfollowing facts about it.</p>
 								<ul>
 									<li>S begins with 1.</li>
-									<li>The elements of <code>(scale-stream S 2)code> are also elements of S.</li>
+									<li>The elements of <code>(scale-stream S 2)code> are also elements of S.</code></li>
 									<li>The same is true for <code>(scale-stream S 3and (scale-stream 5 S)</code>.</li>
 									<li>These are all the elements of S.</li>
 								</ul>
 								<p>Now all we have to do is combine elements fromthese sources. For this we define a proceduremerge that combines two ordered streams into oneordered result stream, eliminating repetitions:</p>
 								<code>(define (merge s1 s2)(cond ((stream-null?s1) s2)((stream-null? s2) s1)(else(let ((s1car(stream-car s1))(s2car (stream-car s2)))(cond ((<s1car s2car) (cons-stream s1car (merge (stream-cdrs1) s2))) ((> s1car
 										s2car)(cons-stream s2car(merge s1 (stream-cdr s2))))(else(cons-stream s1car
-										(merge (stream-cdr s1)(stream-cdr s2)))))))))<code>
-											<p>Then the required stream may bconstructed withmerge, as follows:</p>
-											<code>(define S (cons-stream 1 (merge
-												<??>
-												<??>)))
-											</code>
-											<p>Fill in the missing expressions in thplacesmarked
-												<??> above.
-											</p>
+										(merge (stream-cdr s1)(stream-cdr s2)))))))))</code>
+								<p>Then the required stream may bconstructed withmerge, as follows:</p>
+								<code>(define S (cons-stream 1 (merge
+									<??>
+									<??>)))
+								</code>
+								<p>Fill in the missing expressions in thplacesmarked
+									<??> above.
+								</p>
 				</article>
 			</section>
 		</div>
