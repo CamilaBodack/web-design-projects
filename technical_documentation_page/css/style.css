@@ -1,16 +1,13 @@
 html, body{
     margin: 0;
-    max-width: 100%;
-    height: 100%;
-    background-color: rgb(208, 238, 249);
+    width: 100%;
+    max-height: auto;
+    background-color: rgb(255, 255, 255);
     font-family: 'Milonga', cursive;
 }
 header{
     font-weight: bold;
     font-size: 20px;
-}
-#main-doc{
-    overflow-y: scroll;
 }
 #nav-bar{
     display: block;
@@ -20,18 +17,18 @@ header{
     height: auto;
     margin-left: 0;
     margin-right: auto;
-    border-right: 3px solid rgb(51, 51, 51);
-    overflow: scroll;
+    border-right: 4px solid rgb(51, 51, 51);
 }
 #nav-bar header{
     display: inherit;
     text-align: center;
     padding: 10px;
     font-size: 13px;
-    margin-left: 2em;
+    margin-left: 3em;
+    margin-right:0.8em;
     border-bottom: 1px solid rgb(33, 34, 34);
     font-weight: bold;
-    color: rgb(51, 51, 51) ;
+    color: rgb(0, 0, 0);
 }
 #nav-bar ul{
     margin-top: 1em;
@@ -51,16 +48,16 @@ header{
     font-size: 17px;
     text-align: justify;
     text-decoration: none;
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
 }
 .content-container{
     display: inline-block;
     box-sizing: border-box;
-    height: 100%;
+    height: auto;
     width: 70%;
     text-align: justify;
     margin-left: 20em;
-    margin-top: -35em;
+    margin-top: -30em;
     margin-right: 0;
 }
 .main-section{
@@ -69,6 +66,7 @@ header{
     margin-left: auto;
     margin-top: 0;
     height: auto;
+    overflow-y: scroll;
 }
 footer{
     display: inline-flex;
@@ -76,7 +74,7 @@ footer{
     align-self: center;
     align-content: center;
     align-items: center;
-    background-color: rgb(38, 155, 240);
+    background-color: rgb(241, 23, 23);
     width: 100%;
     height: 3em;
     margin: auto;
@@ -86,7 +84,7 @@ footer a{
     text-align: center;
     font-size: 15px;
     font-weight: bolder;
-    color: rgb(75, 75, 75);
+    color: rgb(0, 0, 0);
     margin: auto;
     width: auto;
 }
