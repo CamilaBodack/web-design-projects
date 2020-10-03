@@ -1,24 +1,26 @@
 html, body{
     margin: 0;
-    display: flex;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-color: rgb(208, 238, 249);
+    font-family: 'Milonga', cursive;
+}
+header{
+    font-weight: bold;
+    font-size: 20px;
 }
 #main-doc{
-    display: inherit;
-    height: auto;
-    width: auto;
+    overflow-y: scroll;
 }
 #nav-bar{
     display: block;
     position: static;
     width: 20%;
-    padding: 5px;
+    padding: 4px;
     height: auto;
     margin-left: 0;
     margin-right: auto;
-    border-right: 3px solid rgb(101, 101, 101);
+    border-right: 3px solid rgb(51, 51, 51);
     overflow: scroll;
 }
 #nav-bar header{
@@ -29,7 +31,7 @@ html, body{
     margin-left: 2em;
     border-bottom: 1px solid rgb(33, 34, 34);
     font-weight: bold;
-    color: rgb(33, 34, 34);
+    color: rgb(51, 51, 51) ;
 }
 #nav-bar ul{
     margin-top: 1em;
@@ -42,23 +44,24 @@ html, body{
     padding: 0;
     margin-left: 0;
     margin-right: 10px;
-    line-height: 2.5;
+    line-height: 2;
     border-bottom: 1px solid rgb(33, 34, 34);
 }
 #nav-bar a{
+    font-size: 17px;
     text-align: justify;
     text-decoration: none;
-    color: rgb(101, 101, 101);
+    color: rgb(51, 51, 51);
 }
 .content-container{
-    box-sizing: content-box;
-    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
+    text-align: justify;
+    margin-left: 20em;
+    margin-top: -35em;
     margin-right: 0;
-    overflow-y: scroll;
 }
 .main-section{
     width: 100%;
@@ -68,8 +71,22 @@ html, body{
     height: auto;
 }
 footer{
-    display:inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(38, 155, 240);
+    width: 100%;
+    height: 3em;
+    margin: auto;
 }
 footer a{
-    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(75, 75, 75);
+    margin: auto;
+    width: auto;
 }
