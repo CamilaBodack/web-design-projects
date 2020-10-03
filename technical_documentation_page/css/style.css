@@ -1,35 +1,34 @@
 html, body{
     margin: 0;
-    display: flex;
     width: 100%;
-    height: 100%;
-    background-color: rgb(208, 238, 249);
+    max-height: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Milonga', cursive;
 }
-#main-doc{
-    display: inherit;
-    height: auto;
-    width: auto;
+header{
+    font-weight: bold;
+    font-size: 20px;
 }
 #nav-bar{
     display: block;
     position: static;
     width: 20%;
-    padding: 5px;
+    padding: 4px;
     height: auto;
     margin-left: 0;
     margin-right: auto;
-    border-right: 3px solid rgb(101, 101, 101);
-    overflow: scroll;
+    border-right: 4px solid rgb(51, 51, 51);
 }
 #nav-bar header{
     display: inherit;
     text-align: center;
     padding: 10px;
     font-size: 13px;
-    margin-left: 2em;
+    margin-left: 3em;
+    margin-right:0.8em;
     border-bottom: 1px solid rgb(33, 34, 34);
     font-weight: bold;
-    color: rgb(33, 34, 34);
+    color: rgb(0, 0, 0);
 }
 #nav-bar ul{
     margin-top: 1em;
@@ -42,23 +41,24 @@ html, body{
     padding: 0;
     margin-left: 0;
     margin-right: 10px;
-    line-height: 2.5;
+    line-height: 2;
     border-bottom: 1px solid rgb(33, 34, 34);
 }
 #nav-bar a{
+    font-size: 17px;
     text-align: justify;
     text-decoration: none;
-    color: rgb(101, 101, 101);
+    color: rgb(0, 0, 0);
 }
 .content-container{
-    box-sizing: content-box;
+    display: inline-block;
+    box-sizing: border-box;
     height: auto;
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
+    text-align: justify;
+    margin-left: 20em;
+    margin-top: -30em;
     margin-right: 0;
-    overflow-y: scroll;
 }
 .main-section{
     width: 100%;
@@ -66,10 +66,25 @@ html, body{
     margin-left: auto;
     margin-top: 0;
     height: auto;
+    overflow-y: scroll;
 }
 footer{
-    display:inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(241, 23, 23);
+    width: 100%;
+    height: 3em;
+    margin: auto;
 }
 footer a{
-    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    width: auto;
 }
