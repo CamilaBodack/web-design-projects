@@ -20,19 +20,17 @@
 			</header>
 			<ul>
 				<li><a class="nav-link" href="#Introduction">Introduction</a></li>
-				<li><a class="nav-link" href="#Building_Abstractions_With_Procedures">Building Abstrations With Procedures</a></li>
-				<li><a class="nav-link" href="#Building_Abstrations_With_Data">Building Abstrations With Data</a></li>
-				<li><a class="nav-link" href="#Modularity_Objects_And_State">Modularity, Objects And State</a></li>
-				<li><a class="nav-link" href="#Metalinguistic_Abstration">Metalinguistic Abstration</a></li>
+				<li><a class="nav-link" href="#Building_Abstractions_With_Procedures">Building Abstractions With Procedures</a></li>
+				<li><a class="nav-link" href="#Building_Abstractions_With_Data">Building Abstractions With Data</a></li>
+				<li><a class="nav-link" href="#Modularity_Objects_And_State">Modularity Objects And State</a></li>
+				<li><a class="nav-link" href="#Metalinguistic_Abstraction">Metalinguistic Abstraction</a></li>
 				<li><a class="nav-link" href="#Computing_With_Register_Machines">Computing With Register Machines</a></li>
 				<li><a class="nav-link" href="#Exercises">Exercises</a></li>
 			</ul>
 		</nav>
 		<div class="content-container">
 			<section id="Introduction" class="main-section">
-				<header>
-					Introduction
-				</header>
+				<header>Introduction</header>
 				<article>
 					<p> This book is dedicated, in respect and admiration, to the spirit that lives in the computer.
 						<br>
@@ -47,9 +45,7 @@
 				</article>
 			</section>
 			<section id="Building_Abstractions_With_Procedures" class="main-section">
-				<header>
-					Building Abstrations With Procedures
-				</header>
+				<header>Building Abstractions With Procedures</header>
 				<article>
 					<p>We are about to study the idea of a computational process. Computational processes are abstract beings that inhabit computers. As they evolve, processes manipulate other abstract things called data. The evolution of a process
 						is directed by a pattern of rules called a program. People create programs to direct processes. In effect, we conjure the spirits of the computer with our spells.</p>
@@ -58,10 +54,8 @@
 						expressions in arcane and esoteric programming languages that prescribe the tasks we want our processes to perform.</p>
 				</article>
 			</section>
-			<section id="Building_Abstrations_With_Data" class="main-section">
-				<header>
-					Building Abstrations with Data
-				</header>
+			<section id="Building_Abstractions_With_Data" class="main-section">
+				<header>Building Abstractions With Data</header>
 				<article>
 					<p>In this chapter we are going to look at more complex data. All the procedures in chapter 1 operate on simple numerical data, and simple data are not sufficient for many of the problems we wish to address using computation.
 						Programs are typically designed to model complexphenomena, and more often than not one must constructcomputational objects that have several parts in orderto model real-world phenomena that have severalaspects. Thus,
@@ -90,9 +84,7 @@
 				</article>
 			</section>
 			<section id="Modularity_Objects_And_State" class="main-section">
-				<header>
-					Modularity, Objects and State
-				</header>
+				<header>Modularity Objects And State</header>
 				<article>
 					<p>The preceding chapters introduced the basic elements from which programs are made. We saw how primitive procedures and primitive data are combined to construct compound entities, and we learned that abstraction is vital in
 						helping us to cope with the complexity of large systems. But these tools are not sufficient for designing programs. Effective program synthesis also requires organizational principles that can guide us in formulating the
@@ -100,10 +92,8 @@
 						developed and maintained.</p>
 				</article>
 			</section>
-			<section id="Metalinguistic_Abstration" class="main-section">
-				<header>
-					Metalinguistic Abstration
-				</header>
+			<section id="Metalinguistic_Abstraction" class="main-section">
+				<header>Metalinguistic Abstraction</header>
 				<article>
 					<p>In our study of program design, we have seen that expert programmers control the complexity of their designs with the same general techniques used by designers of all complex systems. They combine primitive elements to form
 						compound objects, they abstract compound objects to form higher-level building blocks, and they preserve modularity by adopting appropriate large-scale views of system structure. In illustrating these techniques, we have used
@@ -119,9 +109,7 @@
 				</article>
 			</section>
 			<section id="Computing_With_Register_Machines" class="main-section">
-				<header>
-					Computing With Register Machines
-				</header>
+				<header>Computing With Register Machines</header>
 				<article>
 					<p>In this chapter we will describe processes in termsof the step-by-step operation of a traditionalcomputer. Such a computer, or register machine,sequentially executes instructions that manipulate thecontents of a fixed
 						set of storage elements called registers. Atypicalregister-machine instruction applies aprimitiveoperation to the contents of someregisters and assignsthe result to anotherregister. Our descriptions ofprocesses
@@ -132,9 +120,7 @@
 				</article>
 			</section>
 			<section id="Exercises" class="main-section">
-				<header>
-					Exercises
-				</header>
+				<header>Exercises</header>
 				<article>
 					<p><strong>Exercise 1.1.</strong> Below is a sequenceof expressions. What is the result printed by theinterpreter in response to each expression? Assumethat the sequence is to be evaluated in the order inwhich it is presented.</p>
 					<code>10(+ 5 3 4)(- 9 1) (/ 6 2)(+ (* 2 4) (- 4 6))(define a 3)(define b (+ a 1))(+ a b (* a b))(= a b)(if (and (> b a) (< b (* a b))) b a) (cond ((=a 4) 6) ((=b 4) (+ 6 7 a)) (else 25)) (+ 2 (if (> b a) b a))(* (cond ((> a b)
