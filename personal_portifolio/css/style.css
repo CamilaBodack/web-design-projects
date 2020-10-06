@@ -9,36 +9,46 @@ body, html{
     font-family: 'Press Start 2P', cursive;
 }
 header{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     box-sizing: border-box;
     border: 2px solid rgb(246, 229, 5);
     height: 4em;
-    width: auto;
+    width: 100%;
     margin-top: 1em;
 }
 #navbar{
     display: inline-flex;
-    align-content: center;
-    padding: 3em;
-    margin-left: 67vw;
+    flex-direction: row;
+    position: fixed;
+    padding: 2em;
+    margin-top: -2em;
+    margin-left: 65vw;
     height: auto;
     width: auto;
 }
 #about-list ul{
-    box-sizing: border-box;
     display: inherit;
+    flex-direction: row;
     width: auto;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}li{
-    display: inline-flex;
-    font-size: 14px;
+    margin: auto;
+}
+#about-list li{
+    display: inline;
+    align-self: center;
+    box-sizing: border-box;
+    list-style: none;
+    padding: -3em;
     width: auto;
     height: auto;
-    margin-left: 0.3em;
-    margin-right: 0;
+    margin: auto;
+}
+#about-list a{
+    padding: 1px;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 #welcome-section{
     display: block;
