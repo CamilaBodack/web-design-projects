@@ -69,26 +69,28 @@ header{
     width: auto;
 }
 #projects{
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 2em;
+    display: block;
+    box-sizing: content-box;
+    padding: 2.5em;
     border: 2px solid rgb(30, 218, 241);
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: 2em;
     width: auto;
+    height: auto;
 }h2{
     text-align: center;
 }
 
 .projects-gallery{
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: column;
     border: 2px solid rgb(255, 0, 61);
-    width: 20vw;
-    height: 20em;
+    width: 19vw;
+    height: 19em;
     line-height: 2;
-    margin: 0.6em;
-    padding: 1.5em;
+    margin: 1em;
+    padding: 2em;
 }h3{
     font-size: 15px;
     text-align: center;
@@ -119,6 +121,7 @@ header{
     margin: auto;
     padding: 1em;
     align-self: center
+
 }
 footer{
     display: inline-flex;
