@@ -42,6 +42,8 @@ header{
     margin: auto;
 }
 #about-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     padding: 0.4em;
     font-size: 19px;
     font-weight: bold;
@@ -124,20 +126,29 @@ header{
 
 }
 footer{
-    display: inline-flex;
-    margin-top: 12em;
-    margin-left: 8em;
-    margin-right: 8em;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+    margin-top: 9em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
     max-width: 100%;
     height: 3em;
     border: 2px solid rgb(221, 30, 30);
-}a{
-    text-decoration: none;
+}
+#profile-link{
+    display: inline;
     text-align: center;
-    padding: 3em;
+    padding: 2px;
     margin-top: 1em;
     margin-left: 25vw;
     margin-right: 25vw;
-    font-size: 15px;
+    margin-bottom: 1em;
+    font-size: 25px;
+    font-weight: bold;
     color: inherit;
+    text-decoration: none;
 }
