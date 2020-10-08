@@ -5,8 +5,6 @@ Freecodecamp Responsive Web Design Projects
 
 In all challenges we should build responsive web pages using mostly HTML,  plain CSS and Javascript. Additional technologies (for example jQuery, React, Angular or Vue) were not recommended for these projects.
 
-***in progress***
-
 ---
 
 ## Tribute Page
@@ -58,5 +56,17 @@ I was inspired and used the book Structure And Interpretation Of Computer Progra
 Developed using HTML5, CSS3 and Express.
 
 <img src="technical_documentation_page/imgs/documentation_page.gif" width="700" height="400">
+
+---
+
+## Portfolio
+
+
+**5. Fifth Challenge: Portfolio Page**
+
+In the final challenge we should build a responsive portfolio page functionally similar to this: https://codepen.io/freeCodeCamp/full/zNBOYG.
+I was inspired by geometric shapes and bright colors like neon tones.
+
+<img src="personal_portifolio/imgs/portfolio.gif" width="640" height="316">
 
 ---
