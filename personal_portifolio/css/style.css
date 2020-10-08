@@ -3,7 +3,7 @@ body, html{
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     font-family: 'Major Mono Display', monospace;
 }
@@ -50,18 +50,16 @@ body, html{
     margin: 0;
 }
 #welcome-section{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: static;
-    margin: auto;
-    padding: 7em;
+    padding-top: 0px;
+    display: block;
+    height: 100vh;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    height: auto;
+    height: 100vh;
 }h1, p{
+    margin-top: 25vh;
     font-size: 35px;
     line-height: 1;
     text-align: center;
@@ -75,7 +73,7 @@ body, html{
     border: 2px solid rgb(30, 218, 241);
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-top: 2em;
+    margin-top:-25em;
     width: auto;
     height: auto;
 }h2{
@@ -131,7 +129,7 @@ footer{
     align-items: center;
     align-content: center;
     padding: 2px;
-    margin-top: 9em;
+    margin-top: 10em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
@@ -156,7 +154,7 @@ footer{
     body, html{
         display: block;
         max-width: 100%;
-        max-height: 100%;
+        height: 100vh;
         margin: 0;
     }
     #navbar{
@@ -204,15 +202,16 @@ footer{
 }
 #welcome-section{
     display: block;
-    margin: auto;
-    padding: 5em;
-    margin-top: 3em;
+    height: 100vh;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -100vh;
     max-width: 100%;
-    height: auto;
+    height: 100vh;
 }h1, p{
-    font-size: 22px;
+    margin-top: 20vh;
+    font-size: 25px;
     line-height: 1;
     text-align: center;
     height: auto;
@@ -220,16 +219,18 @@ footer{
 }
 #projects{
     display: block;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 2.5em;
     border: 2px solid rgb(30, 218, 241);
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-top: 0.5em;
+    margin-top: 25vh;
     width: auto;
     height: auto;
 }h2{
+    margin-top: -1vh;
     text-align: center;
+    font-size: 15px;
 }
 
 .project-tile{
